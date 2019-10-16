@@ -5,17 +5,17 @@
     <title>Create a new Bus</title>
 </head>
 <body>
-<form action="#" th:action="@{/createBusVehicle}" th:object="${busVehicle}" method="post">
+<form action="#" th:action="@{/createbusvehicle}" th:object="${busVehicle}" method="post">
     <p>plateNumber: <input type="text" th:field="*{plateNumber}" /></p>
     <p>passengerCapacity: <input type="text" th:field="*{passengerCapacity}" /></p>
     <select name="color">
         <option th:each="colorOpt : ${T(com.grazzini.model.BusVehicleColor).values()}"
-                th:value="${colorOpt}" th:text="${colorOpt.displayValue}"></option>
+                th:value="${colorOpt}" th:text="${colorOpt}"></option>
     </select>
 
     <select name="type">
         <option th:each="typeOpt : ${T(com.grazzini.model.BusVehicleType).values()}"
-                th:value="${typeOpt}" th:text="${typeOpt.displayValue}"></option>
+                th:value="${typeOpt}" th:text="${typeOpt}"></option>
     </select>
 
 

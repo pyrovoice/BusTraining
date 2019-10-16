@@ -30,17 +30,17 @@ public class BusVehicle {
     @Column(name = "BUSVEHICULE_COLOR")
     private BusVehicleColor color;
 
-    @NotNull
     @Min(0)
     @Max(70)
     @Column(name = "BUSVEHICULE_PASSENGERCAPACITY")
-    private int passengerCapacity;
+    @NotNull
+    private Integer passengerCapacity;
 
     @ManyToOne
     @JoinColumn(name ="FK_depotId")
     private Depot depotParkedIn;
 
-    public BusVehicle(@Pattern(regexp = "BUS-\\d{3}-\\d{3}") String plateNumber, BusVehicleType type, BusVehicleColor color, @Min(0) @Max(70) int passengerCapacity) {
+    public BusVehicle(@Pattern(regexp = "BUS-\\d{3}-\\d{3}") String plateNumber, BusVehicleType type, BusVehicleColor color, @Min(0) @Max(70) Integer passengerCapacity) {
         this.plateNumber = plateNumber;
         this.type = type;
         this.color = color;

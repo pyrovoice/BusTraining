@@ -27,12 +27,15 @@ public class MainPage {
     }
 
     @GetMapping("/createbusvehicle")
-    public String createBusVehicleDisplay(@ModelAttribute("busVehicle") BusVehicle b) {
+    public String createBusVehicleDisplay(BusVehicle busVehicle) {
         return "createBusVehicle";
     }
 
     @PostMapping("/createbusvehicle")
     public String checkAndCreateBusVehicle (@Valid BusVehicle newBusVehicle, BindingResult bindingResultModel, Model model) {
+        if (bindingResultModel.hasErrors()) {
+            return "createBusVehicle";
+        }
         busVehiculeRepository.save(newBusVehicle);
         return "mainpage";
     }
