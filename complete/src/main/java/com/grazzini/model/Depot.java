@@ -1,7 +1,5 @@
 package com.grazzini.model;
 
-import lombok.Getter;
-import lombok.Setter;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
@@ -11,8 +9,6 @@ import java.util.HashSet;
 import java.util.Set;
 
 @Entity(name="DEPOT")
-@Getter
-@Setter
 public class Depot {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -24,20 +20,60 @@ public class Depot {
 
     @NotNull
     @Column(name = "DEPOT_BUSCAPACITY")
-    private int busCapacity;
+    private Integer busCapacity;
 
     @Column(name = "DEPOT_BUSVEHICULESPARKED")
-    @OneToMany(mappedBy="id", cascade = CascadeType.DETACH, fetch=FetchType.EAGER)
+    @OneToMany(mappedBy="depotParkedIn", cascade = CascadeType.DETACH, fetch=FetchType.EAGER)
     private Set<BusVehicle> busVehiclesParked = new HashSet<BusVehicle>();
 
 
     /*public Set<BusVehicle> getBusVehicles(){
         return this.busVehiculesParked;
     }*/
+    public Depot(String name, int busCapacity) {
+        this(name, busCapacity, null);
+    }
 
-    public Depot(@NotBlank String name, @NotNull int busCapacity, Collection<BusVehicle> busVehicles) {
+    public Depot(String name, int busCapacity, Collection<BusVehicle> busVehicles) {
         this.name = name;
         this.busCapacity = busCapacity;
-        this.busVehiclesParked = new HashSet<BusVehicle>(busVehicles);
+        if(busVehicles != null){
+            this.busVehiclesParked = new HashSet<BusVehicle>(busVehicles);
+        }
+    }
+
+    public Depot() {
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Integer getBusCapacity() {
+        return busCapacity;
+    }
+
+    public void setBusCapacity(int busCapacity) {
+        this.busCapacity = busCapacity;
+    }
+
+    public Set<BusVehicle> getBusVehiclesParked() {
+        return busVehiclesParked;
+    }
+
+    public void setBusVehiclesParked(Set<BusVehicle> busVehiclesParked) {
+        this.busVehiclesParked = busVehiclesParked;
     }
 }

@@ -1,14 +1,10 @@
 package com.grazzini.model;
 
-import lombok.Getter;
-import lombok.Setter;
 
 import javax.persistence.*;
 import javax.validation.constraints.*;
 
 @Entity(name="BUSVEHICULE")
-@Getter
-@Setter
 public class BusVehicle {
 
 
@@ -17,34 +13,82 @@ public class BusVehicle {
     private Long id;
 
     @Column(unique = true,name = "BUSVEHICULE_PLATENUMBER")
-    @NotBlank
-    //Regex match BUS-XXX-XXX where X is any number
-    @Pattern(regexp = "BUS-\\d{3}-\\d{3}")
     private String plateNumber;
 
-    @NotNull
     @Column(name = "BUSVEHICULE_TYPE")
     private BusVehicleType type;
 
-    @NotNull
     @Column(name = "BUSVEHICULE_COLOR")
     private BusVehicleColor color;
 
-    @Min(0)
-    @Max(70)
     @Column(name = "BUSVEHICULE_PASSENGERCAPACITY")
-    @NotNull
     private Integer passengerCapacity;
 
     @ManyToOne
     @JoinColumn(name ="FK_depotId")
     private Depot depotParkedIn;
 
-    public BusVehicle(@Pattern(regexp = "BUS-\\d{3}-\\d{3}") String plateNumber, BusVehicleType type, BusVehicleColor color, @Min(0) @Max(70) Integer passengerCapacity) {
+    public BusVehicle(String plateNumber, BusVehicleType type, BusVehicleColor color, Integer passengerCapacity) {
+        this(plateNumber, type, color, passengerCapacity, null);
+    }
+
+    public BusVehicle(String plateNumber, BusVehicleType type, BusVehicleColor color, Integer passengerCapacity, Depot depot) {
         this.plateNumber = plateNumber;
         this.type = type;
         this.color = color;
         this.passengerCapacity = passengerCapacity;
+        this.depotParkedIn = depot;
+    }
+
+    public BusVehicle() {
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getPlateNumber() {
+        return plateNumber;
+    }
+
+    public void setPlateNumber(String plateNumber) {
+        this.plateNumber = plateNumber;
+    }
+
+    public BusVehicleType getType() {
+        return type;
+    }
+
+    public void setType(BusVehicleType type) {
+        this.type = type;
+    }
+
+    public BusVehicleColor getColor() {
+        return color;
+    }
+
+    public void setColor(BusVehicleColor color) {
+        this.color = color;
+    }
+
+    public Integer getPassengerCapacity() {
+        return passengerCapacity;
+    }
+
+    public void setPassengerCapacity(Integer passengerCapacity) {
+        this.passengerCapacity = passengerCapacity;
+    }
+
+    public Depot getDepotParkedIn() {
+        return depotParkedIn;
+    }
+
+    public void setDepotParkedIn(Depot depotParkedIn) {
+        this.depotParkedIn = depotParkedIn;
     }
 }
 

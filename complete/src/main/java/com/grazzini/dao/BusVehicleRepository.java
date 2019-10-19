@@ -7,7 +7,7 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-
 public interface BusVehicleRepository extends JpaRepository<BusVehicle, Long> {
     public List<BusVehicle> findByDepotParkedInNull();
+    public List<BusVehicle> findByPlateNumber(String plateNumber);
 }

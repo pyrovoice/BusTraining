@@ -2,14 +2,44 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="14b3676a-e210-4be3-9b3c-003a0d2b1f11" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/complete/src/main/java/com/grazzini/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/complete/src/main/java/com/grazzini/modelview/BusVehicleCreateFormModelView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/complete/src/main/java/com/grazzini/views/CreateBusVehiclePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/complete/src/main/java/com/grazzini/views/CreateDepotPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/complete/src/main/java/com/grazzini/views/MainPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/complete/src/main/java/com/grazzini/wrapper/BusVehiculeWrapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/complete/src/main/java/com/grazzini/wrapper/DepotWrapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/complete/src/main/resources/data.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/complete/src/main/resources/templates/createDepot.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/complete/src/test/java/com/grazzini/views/BaseTestClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/complete/src/test/java/com/grazzini/views/BusVehicleRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/complete/src/test/java/com/grazzini/views/BusWrapperTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/complete/src/test/java/com/grazzini/views/DepotWrapperTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/complete/src/test/java/com/grazzini/views/TestHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_10.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/complete/src/main/java/com/grazzini/mainpage/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/complete/src/main/java/com/grazzini/mainpage/MainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/complete/handling-form-submission.iml" beforeDir="false" afterPath="$PROJECT_DIR$/complete/handling-form-submission.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/complete/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/complete/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/complete/src/main/java/com/grazzini/dao/BusVehicleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/complete/src/main/java/com/grazzini/dao/BusVehicleRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/complete/src/main/java/com/grazzini/dao/DepotRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/complete/src/main/java/com/grazzini/dao/DepotRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/complete/src/main/java/com/grazzini/mainpage/MainPage.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/complete/src/main/java/com/grazzini/model/BusVehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/complete/src/main/java/com/grazzini/model/BusVehicle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/complete/src/main/java/com/grazzini/model/Depot.java" beforeDir="false" afterPath="$PROJECT_DIR$/complete/src/main/java/com/grazzini/model/Depot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/complete/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/complete/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/complete/src/main/resources/data_removethis.sql" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/complete/src/main/resources/templates/createBusVehicle.html" beforeDir="false" afterPath="$PROJECT_DIR$/complete/src/main/resources/templates/createBusVehicle.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/complete/target/classes/com/grazzini/mainpage/MainPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/complete/target/classes/com/grazzini/mainpage/MainPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/complete/src/main/resources/templates/mainpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/complete/src/main/resources/templates/mainpage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/complete/src/test/java/com/grazzini/mainpage/BusApplicationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/complete/src/test/java/com/grazzini/views/BusApplicationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/complete/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/complete/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/complete/target/classes/com/grazzini/dao/BusVehicleRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/complete/target/classes/com/grazzini/dao/BusVehicleRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/complete/target/classes/com/grazzini/dao/DepotRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/complete/target/classes/com/grazzini/dao/DepotRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/complete/target/classes/com/grazzini/mainpage/MainPage.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/complete/target/classes/com/grazzini/model/BusVehicle.class" beforeDir="false" afterPath="$PROJECT_DIR$/complete/target/classes/com/grazzini/model/BusVehicle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/complete/target/classes/com/grazzini/model/Depot.class" beforeDir="false" afterPath="$PROJECT_DIR$/complete/target/classes/com/grazzini/model/Depot.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/complete/target/classes/data_removethis.sql" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/complete/target/classes/templates/createBusVehicle.html" beforeDir="false" afterPath="$PROJECT_DIR$/complete/target/classes/templates/createBusVehicle.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/complete/target/classes/templates/mainpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/complete/target/classes/templates/mainpage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/complete/target/test-classes/com/grazzini/mainpage/BusApplicationTest.class" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,8 +50,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -36,18 +66,24 @@
     </option>
   </component>
   <component name="ProjectId" id="1SFEhNl4z6c6tN6WvwrudjYcmqP" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/complete/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/complete/src/main/resources/templates" />
     <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.example" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.grazzini.wrapper" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\maxim\Documents\DEV\gs-handling-form-submission-master\complete\src\main\resources\templates" />
       <recent name="C:\Users\maxim\Documents\DEV\gs-handling-form-submission-master\complete\src\main\resources" />
       <recent name="C:\Users\maxim\Documents\DEV\gs-handling-form-submission-master\complete\src\main\java\com\example\dao" />
       <recent name="C:\Users\maxim\Documents\DEV\gs-handling-form-submission-master\complete\src\main\java\com\example\model" />
@@ -79,18 +115,64 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BusApplicationTest.whenApplicationStarts_thenHibernateCreatesInitialRecords" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BusVehicleRepositoryTest.testGetVehicleWithoutDepot" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="handling-form-submission" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.grazzini.mainpage.*" />
+          <option name="PATTERN" value="com.grazzini.views.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.grazzini.mainpage" />
-      <option name="MAIN_CLASS_NAME" value="com.grazzini.mainpage.BusApplicationTest" />
-      <option name="METHOD_NAME" value="whenApplicationStarts_thenHibernateCreatesInitialRecords" />
+      <option name="PACKAGE_NAME" value="com.grazzini.views" />
+      <option name="MAIN_CLASS_NAME" value="com.grazzini.views.BusVehicleRepositoryTest" />
+      <option name="METHOD_NAME" value="testGetVehicleWithoutDepot" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DepotWrapperTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="handling-form-submission" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.grazzini.views.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.grazzini.views" />
+      <option name="MAIN_CLASS_NAME" value="com.grazzini.views.DepotWrapperTest" />
+      <option name="METHOD_NAME" value="addNewBusToDepotOutsideLimit" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DepotWrapperTest.addNewBusToDepotOutsideLimit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="handling-form-submission" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.grazzini.views.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.grazzini.views" />
+      <option name="MAIN_CLASS_NAME" value="com.grazzini.views.DepotWrapperTest" />
+      <option name="METHOD_NAME" value="addNewBusToDepotOutsideLimit" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.grazzini.views in handling-form-submission" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="handling-form-submission" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.grazzini.views.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.grazzini.views" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -98,7 +180,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.BusTrainingApplication" />
-        <item itemvalue="JUnit.BusApplicationTest.whenApplicationStarts_thenHibernateCreatesInitialRecords" />
+        <item itemvalue="JUnit.com.grazzini.views in handling-form-submission" />
+        <item itemvalue="JUnit.BusVehicleRepositoryTest.testGetVehicleWithoutDepot" />
+        <item itemvalue="JUnit.DepotWrapperTest" />
+        <item itemvalue="JUnit.DepotWrapperTest.addNewBusToDepotOutsideLimit" />
       </list>
     </recent_temporary>
   </component>
@@ -132,16 +217,20 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/complete/src/main/java/com/grazzini/mainpage/MainPage.java</url>
+          <url>file://$PROJECT_DIR$/complete/src/test/java/com/grazzini/views/BaseTestClass.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/complete/src/main/java/com/grazzini/views/CreateBusVehiclePage.java</url>
           <line>35</line>
-          <option name="timeStamp" value="3" />
+          <option name="timeStamp" value="23" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
-        <watch expression="((BeanPropertyBindingResult)bindingResultModel).messageCodesResolver" custom="org.springframework.validation.BeanPropertyBindingResult" />
-        <watch expression="args" />
+        <watch expression="busVehicleCreateFormModelView.getDepotParkedInName()" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>

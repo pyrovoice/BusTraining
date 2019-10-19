@@ -1,0 +1,1 @@
+Insert into Depot (depot_name, DEPOT_BUSCAPACITY) VALUES ('Depot1', 50),('Depot2', 50);

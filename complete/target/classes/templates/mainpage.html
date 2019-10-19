@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <title>See all buses</title>
 </head>
+<div>
+<a th:href="@{/createdepot}">Create Depot</a>
+<a th:href="@{/createbusvehicle}">Create Bus</a>
+</div>
 <body>
 <tr th:each="depot: ${Depots}">
     <td th:text="${depot.name}" />
@@ -22,7 +26,7 @@
         <tr th:if="${BusVehiclesWithoutDepot.isEmpty()}">
             <td colspan="2">No Bus parked in this Depot.</td>
         </tr>
-        <tr th:each="busVehicle : ${Depot.busVehiclesParked}">
+        <tr th:each="busVehicle : ${depot.busVehiclesParked}">
             <td><span th:text="${busVehicle.plateNumber}"> Plate number </span></td>
             <td><span th:text="${busVehicle.type}"> Type </span></td>
             <td><span th:text="${busVehicle.color}"> Color </span></td>
@@ -31,6 +35,9 @@
         </tbody>
     </table>
 </tr>
+<hr/>
+
+<tr th:if="${!BusVehiclesWithoutDepot.isEmpty()}">
 
 <table>
     <thead>
@@ -50,5 +57,7 @@
     </tr>
     </tbody>
 </table>
+</tr>
+
 </body>
 </html>
