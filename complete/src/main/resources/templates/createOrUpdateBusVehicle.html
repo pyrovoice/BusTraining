@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Create a new Bus</title>
+</head>
+<body>
+<form action="#" th:action="@{/createorupdatebusvehicle}" method="post">
+    <input type="hidden" name="busVehicleId" th:value="${busVehicleId}" />
+    <p>Plate number: <input type="text" name="busVehiclePlateNumber" th:value="${busVehiclePlateNumber}" /></p>
+    <p>Passenger capacity: <input type="text" name="busVehiclePassengerCapacity" th:value="${busVehiclePassengerCapacity}" /></p>
+    <select name="busVehicleColor">
+        <option th:each="colorOpt : ${T(com.grazzini.model.BusVehicleColor).values()}"
+                th:value="${busVehicleColor}" th:text="${colorOpt}" th:selected="${busVehicleColor} == colorOpt"></option>
+    </select>
+
+    <select name="busVehicleType">
+        <option th:each="typeOpt : ${T(com.grazzini.model.BusVehicleType).values()}"
+                th:value="${busVehicleType}" th:text="${typeOpt}" th:selected="${busVehicleType} == typeOpt"></option>
+    </select>
+
+    <select name="busVehicleDepotParkedIn">
+        <option th:value="null" text="No initial Depot">No initial depot</option>
+        <option th:each="depotOpt : ${Depots}"
+                th:value="${depotOpt.id}" th:text="${depotOpt.getName()}" th:selected="${busVehicleDepotParkedIn} == ${depotOpt.getName()}"></option>
+    </select>
+
+
+    <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+</form>
+</body>
+</html>

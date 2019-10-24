@@ -5,6 +5,7 @@ import com.grazzini.dao.DepotRepository;
 import com.grazzini.wrapper.BusVehiculeWrapper;
 import com.grazzini.wrapper.DepotWrapper;
 import org.junit.After;
+import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,13 +26,8 @@ public abstract class BaseTestClass {
     protected TestHelper testHelper;
 
     @Before
-    public void initHelper(){
+    public void initHelperAndCleanDatabase(){
         testHelper = new TestHelper(busVehicleRepository, depotRepository, busVehiculeWrapper, depotWrapper);
-    }
-
-    @After
-    public void cleanDatabase(){
         testHelper.cleanDatabase();
     }
-
 }

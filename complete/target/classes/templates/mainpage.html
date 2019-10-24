@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <title>See all buses</title>
 </head>
-<div>
-<a th:href="@{/createdepot}">Create Depot</a>
-<a th:href="@{/createbusvehicle}">Create Bus</a>
-</div>
 <body>
+<div>
+<a th:href="@{/createorupdatedepot}">Create Depot</a>
+<a th:href="@{/createorupdatebusvehicle}">Create Bus</a>
+</div>
+<hr/>
 <tr th:each="depot: ${Depots}">
     <td th:text="${depot.name}" />
     <td th:text="${depot.busCapacity}" />
+    <a th:href="@{/createorupdatedepot/{id}(id=${depot.id})}">edit</a>
 
     <table>
         <thead>
@@ -20,6 +22,7 @@
             <th> Type </th>
             <th> Color </th>
             <th> Capacity </th>
+            <th> Edit </th>
         </tr>
         </thead>
         <tbody>
@@ -31,6 +34,7 @@
             <td><span th:text="${busVehicle.type}"> Type </span></td>
             <td><span th:text="${busVehicle.color}"> Color </span></td>
             <td><span th:text="${busVehicle.passengerCapacity}"> Capacity </span></td>
+            <td><a th:href="@{/createorupdatebusvehicle/{id}(id=${busVehicle.id})}">edit</a></td>
         </tr>
         </tbody>
     </table>
@@ -46,6 +50,7 @@
         <th> Type </th>
         <th> Color </th>
         <th> Capacity </th>
+        <th> Edit </th>
     </tr>
     </thead>
     <tbody>
@@ -54,6 +59,7 @@
         <td><span th:text="${busVehicle.type}"> Type </span></td>
         <td><span th:text="${busVehicle.color}"> Color </span></td>
         <td><span th:text="${busVehicle.passengerCapacity}"> Capacity </span></td>
+        <td><a th:href="@{/createorupdatebusvehicle/{id}(id=${busVehicle.id})}">edit</a></td>
     </tr>
     </tbody>
 </table>

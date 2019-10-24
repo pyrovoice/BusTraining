@@ -2,44 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="14b3676a-e210-4be3-9b3c-003a0d2b1f11" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/complete/src/main/java/com/grazzini/AppConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/complete/src/main/java/com/grazzini/modelview/BusVehicleCreateFormModelView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/complete/src/main/java/com/grazzini/views/CreateBusVehiclePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/complete/src/main/java/com/grazzini/views/CreateDepotPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/complete/src/main/java/com/grazzini/views/MainPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/complete/src/main/java/com/grazzini/wrapper/BusVehiculeWrapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/complete/src/main/java/com/grazzini/wrapper/DepotWrapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/complete/src/main/resources/data.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/complete/src/main/resources/templates/createDepot.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/complete/src/test/java/com/grazzini/views/BaseTestClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/complete/src/test/java/com/grazzini/views/BusVehicleRepositoryTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/complete/src/test/java/com/grazzini/views/BusWrapperTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/complete/src/test/java/com/grazzini/views/DepotWrapperTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/complete/src/test/java/com/grazzini/views/TestHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_10.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/complete/src/main/java/com/grazzini/helper/NumberHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/complete/src/main/java/com/grazzini/modelview/DepotModelView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/complete/src/main/java/com/grazzini/wrapper/DepotModelViewWrapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/complete/src/main/resources/templates/createOrUpdateDepot.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/complete/handling-form-submission.iml" beforeDir="false" afterPath="$PROJECT_DIR$/complete/handling-form-submission.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/complete/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/complete/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/complete/src/main/java/com/grazzini/dao/BusVehicleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/complete/src/main/java/com/grazzini/dao/BusVehicleRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/complete/src/main/java/com/grazzini/dao/DepotRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/complete/src/main/java/com/grazzini/dao/DepotRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/complete/src/main/java/com/grazzini/mainpage/MainPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/complete/src/main/java/com/grazzini/model/BusVehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/complete/src/main/java/com/grazzini/model/BusVehicle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/complete/src/main/java/com/grazzini/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/complete/src/main/java/com/grazzini/AppConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/complete/src/main/java/com/grazzini/model/Depot.java" beforeDir="false" afterPath="$PROJECT_DIR$/complete/src/main/java/com/grazzini/model/Depot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/complete/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/complete/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/complete/src/main/resources/data_removethis.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/complete/src/main/resources/templates/createBusVehicle.html" beforeDir="false" afterPath="$PROJECT_DIR$/complete/src/main/resources/templates/createBusVehicle.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/complete/src/main/java/com/grazzini/views/CreateBusVehiclePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/complete/src/main/java/com/grazzini/views/CreateOrUpdateBusVehiclePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/complete/src/main/java/com/grazzini/views/CreateDepotPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/complete/src/main/java/com/grazzini/views/CreateOrUpdateDepotPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/complete/src/main/java/com/grazzini/wrapper/BusVehiculeWrapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/complete/src/main/java/com/grazzini/wrapper/BusVehiculeWrapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/complete/src/main/java/com/grazzini/wrapper/DepotWrapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/complete/src/main/java/com/grazzini/wrapper/DepotWrapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/complete/src/main/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/complete/src/main/resources/data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/complete/src/main/resources/templates/createBusVehicle.html" beforeDir="false" afterPath="$PROJECT_DIR$/complete/src/main/resources/templates/createOrUpdateBusVehicle.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/complete/src/main/resources/templates/createDepot.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/complete/src/main/resources/templates/mainpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/complete/src/main/resources/templates/mainpage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/complete/src/test/java/com/grazzini/mainpage/BusApplicationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/complete/src/test/java/com/grazzini/views/BusApplicationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/complete/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/complete/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/complete/target/classes/com/grazzini/dao/BusVehicleRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/complete/target/classes/com/grazzini/dao/BusVehicleRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/complete/target/classes/com/grazzini/dao/DepotRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/complete/target/classes/com/grazzini/dao/DepotRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/complete/target/classes/com/grazzini/mainpage/MainPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/complete/target/classes/com/grazzini/model/BusVehicle.class" beforeDir="false" afterPath="$PROJECT_DIR$/complete/target/classes/com/grazzini/model/BusVehicle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/complete/src/test/java/com/grazzini/views/BaseTestClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/complete/src/test/java/com/grazzini/views/BaseTestClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/complete/src/test/java/com/grazzini/views/BusWrapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/complete/src/test/java/com/grazzini/views/BusWrapperTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/complete/src/test/java/com/grazzini/views/DepotWrapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/complete/src/test/java/com/grazzini/views/DepotWrapperTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/complete/target/classes/com/grazzini/AppConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/complete/target/classes/com/grazzini/AppConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/complete/target/classes/com/grazzini/model/Depot.class" beforeDir="false" afterPath="$PROJECT_DIR$/complete/target/classes/com/grazzini/model/Depot.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/complete/target/classes/data_removethis.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/complete/target/classes/templates/createBusVehicle.html" beforeDir="false" afterPath="$PROJECT_DIR$/complete/target/classes/templates/createBusVehicle.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/complete/target/classes/com/grazzini/views/CreateBusVehiclePage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/complete/target/classes/com/grazzini/views/CreateDepotPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/complete/target/classes/com/grazzini/wrapper/BusVehiculeWrapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/complete/target/classes/com/grazzini/wrapper/BusVehiculeWrapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/complete/target/classes/com/grazzini/wrapper/DepotWrapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/complete/target/classes/com/grazzini/wrapper/DepotWrapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/complete/target/classes/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/complete/target/classes/data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/complete/target/classes/templates/createBusVehicle.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/complete/target/classes/templates/createDepot.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/complete/target/classes/templates/mainpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/complete/target/classes/templates/mainpage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/complete/target/test-classes/com/grazzini/mainpage/BusApplicationTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/complete/target/test-classes/com/grazzini/views/BaseTestClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/complete/target/test-classes/com/grazzini/views/BaseTestClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/complete/target/test-classes/com/grazzini/views/BusWrapperTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/complete/target/test-classes/com/grazzini/views/BusWrapperTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/complete/target/test-classes/com/grazzini/views/DepotWrapperTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/complete/target/test-classes/com/grazzini/views/DepotWrapperTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -76,6 +69,9 @@
     <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\maxim\Documents\DEV\gs-handling-form-submission-master\complete\src\main\resources\templates" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.example" />
     </key>
@@ -115,7 +111,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BusVehicleRepositoryTest.testGetVehicleWithoutDepot" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BusWrapperTest.testNewBusVehicleHasNoDepotByDefault" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="handling-form-submission" />
       <extension name="coverage">
         <pattern>
@@ -124,8 +120,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.grazzini.views" />
-      <option name="MAIN_CLASS_NAME" value="com.grazzini.views.BusVehicleRepositoryTest" />
-      <option name="METHOD_NAME" value="testGetVehicleWithoutDepot" />
+      <option name="MAIN_CLASS_NAME" value="com.grazzini.views.BusWrapperTest" />
+      <option name="METHOD_NAME" value="testNewBusVehicleHasNoDepotByDefault" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -141,13 +137,12 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.grazzini.views" />
       <option name="MAIN_CLASS_NAME" value="com.grazzini.views.DepotWrapperTest" />
-      <option name="METHOD_NAME" value="addNewBusToDepotOutsideLimit" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DepotWrapperTest.addNewBusToDepotOutsideLimit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DepotWrapperTest.validateAndCreateNewDepotWithExistingBusVehicles" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="handling-form-submission" />
       <extension name="coverage">
         <pattern>
@@ -157,7 +152,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.grazzini.views" />
       <option name="MAIN_CLASS_NAME" value="com.grazzini.views.DepotWrapperTest" />
-      <option name="METHOD_NAME" value="addNewBusToDepotOutsideLimit" />
+      <option name="METHOD_NAME" value="validateAndCreateNewDepotWithExistingBusVehicles" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -180,10 +175,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.BusTrainingApplication" />
-        <item itemvalue="JUnit.com.grazzini.views in handling-form-submission" />
-        <item itemvalue="JUnit.BusVehicleRepositoryTest.testGetVehicleWithoutDepot" />
         <item itemvalue="JUnit.DepotWrapperTest" />
-        <item itemvalue="JUnit.DepotWrapperTest.addNewBusToDepotOutsideLimit" />
+        <item itemvalue="JUnit.com.grazzini.views in handling-form-submission" />
+        <item itemvalue="JUnit.DepotWrapperTest.validateAndCreateNewDepotWithExistingBusVehicles" />
+        <item itemvalue="JUnit.BusWrapperTest.testNewBusVehicleHasNoDepotByDefault" />
       </list>
     </recent_temporary>
   </component>
@@ -217,18 +212,47 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/complete/src/test/java/com/grazzini/views/BaseTestClass.java</url>
-          <line>33</line>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/complete/src/main/java/com/grazzini/views/CreateBusVehiclePage.java</url>
+          <url>file://$PROJECT_DIR$/complete/src/main/java/com/grazzini/views/CreateOrUpdateBusVehiclePage.java</url>
           <line>35</line>
           <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/complete/src/main/java/com/grazzini/views/CreateOrUpdateDepotPage.java</url>
+          <line>64</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/complete/src/test/java/com/grazzini/views/DepotWrapperTest.java</url>
+          <line>70</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/complete/src/main/java/com/grazzini/wrapper/BusVehiculeWrapper.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/complete/src/main/java/com/grazzini/wrapper/DepotWrapper.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/complete/src/main/java/com/grazzini/wrapper/DepotWrapper.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/complete/src/main/java/com/grazzini/wrapper/DepotWrapper.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="45" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="busVehicles.get(0).getDepotParkedIn()" language="JAVA" />
+        <watch expression="retrievedDepot" language="JAVA" />
+      </configuration>
       <configuration name="Application">
         <watch expression="busVehicleCreateFormModelView.getDepotParkedInName()" language="JAVA" />
       </configuration>

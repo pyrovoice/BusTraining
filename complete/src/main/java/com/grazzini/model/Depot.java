@@ -4,9 +4,7 @@ package com.grazzini.model;
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
-import java.util.Collection;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 @Entity(name="DEPOT")
 public class Depot {
@@ -24,7 +22,7 @@ public class Depot {
 
     @Column(name = "DEPOT_BUSVEHICULESPARKED")
     @OneToMany(mappedBy="depotParkedIn", cascade = CascadeType.DETACH, fetch=FetchType.EAGER)
-    private Set<BusVehicle> busVehiclesParked = new HashSet<BusVehicle>();
+    private List<BusVehicle> busVehiclesParked = new ArrayList<>();
 
 
     /*public Set<BusVehicle> getBusVehicles(){
@@ -38,7 +36,7 @@ public class Depot {
         this.name = name;
         this.busCapacity = busCapacity;
         if(busVehicles != null){
-            this.busVehiclesParked = new HashSet<BusVehicle>(busVehicles);
+            this.busVehiclesParked = new ArrayList<>(busVehicles);
         }
     }
 
@@ -69,11 +67,11 @@ public class Depot {
         this.busCapacity = busCapacity;
     }
 
-    public Set<BusVehicle> getBusVehiclesParked() {
+    public List<BusVehicle> getBusVehiclesParked() {
         return busVehiclesParked;
     }
 
-    public void setBusVehiclesParked(Set<BusVehicle> busVehiclesParked) {
+    public void setBusVehiclesParked(List<BusVehicle> busVehiclesParked) {
         this.busVehiclesParked = busVehiclesParked;
     }
 }

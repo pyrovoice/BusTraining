@@ -160,4 +160,29 @@ public class BusWrapperTest extends BaseTestClass {
         Assert.assertEquals(0, retrievedBusVehicle.size());
     }
 
+    @Test
+    public void testCreateNewVehicleSameIdReplacePrevious(){
+        BusVehicle busVehicle = new BusVehicle("BUS-000-000", BusVehicleType.REGULAR, BusVehicleColor.GREEN, 30);
+
+        busVehiculeWrapper.validateAndCreateNewBusVehicle(busVehicle);
+        Long createdBusVehicleId = busVehicleRepository.findAll().get(0).getId();
+        busVehicle = new BusVehicle("BUS-000-001", BusVehicleType.REGULAR, BusVehicleColor.GREEN, 30);
+        busVehicle.setId(createdBusVehicleId);
+        busVehiculeWrapper.validateAndCreateNewBusVehicle(busVehicle);
+
+        List<BusVehicle> retrievedBusVehicle = busVehicleRepository.findAll();
+        Assert.assertEquals(1, retrievedBusVehicle.size());
+        Assert.assertEquals("BUS-000-001", retrievedBusVehicle.get(0).getPlateNumber());
+    }
+
+    @Test
+    public void testNewBusVehicleHasNoDepotByDefault(){
+        testHelper.createDepotWithBusVehicles("Depot", 0, 5);
+        BusVehicle newBusVehicle = new BusVehicle("BUS-000-000", BusVehicleType.REGULAR, BusVehicleColor.GREEN, 30);
+        busVehiculeWrapper.validateAndCreateNewBusVehicle(newBusVehicle);
+        Depot defaultDepot = busVehicleRepository.findAll().get(0).getDepotParkedIn();
+        Assert.assertNull(defaultDepot);
+        Depot previouslyCreatedDepot = depotRepository.findAll().get(0);
+        Assert.assertEquals(0, previouslyCreatedDepot.getBusVehiclesParked().size());
+    }
 }

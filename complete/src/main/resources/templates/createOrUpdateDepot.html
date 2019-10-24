@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Depot</title>
+</head>
+<body>
+<form action="#" th:action="@{/createorupdatedepot}" method="post">
+    <input type="hidden" name="depotID" th:value="${depotID}" />
+    <p>Name: <input type="text" name="depotName" th:value="${depotName}"/></p>
+    <p>Capacity: <input type="text" name="depotCapacity" th:value="${depotCapacity}"/></p>
+
+    <tr>
+        <table>
+            <thead>
+            <tr>
+                <th> Plate number </th>
+                <th> Type </th>
+                <th> Color </th>
+                <th> Capacity </th>
+                <th> Current Depot</th>
+                <th> Select</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="busVehicle : ${BusVehicles}">
+                <td><span th:text="${busVehicle.plateNumber}"> Plate number </span></td>
+                <td><span th:text="${busVehicle.type}"> Type </span></td>
+                <td><span th:text="${busVehicle.color}"> Color </span></td>
+                <td><span th:text="${busVehicle.passengerCapacity}"> Capacity </span></td>
+                <td th:switch="${busVehicle.depotParkedIn}">
+                    <span th:case="null">No assigned Depot.</span>
+                    <span th:case="*" th:text="${busVehicle.depotParkedIn.getName()}"></span>
+                </td>
+                <td><input type="checkbox" name="busVehicleIds" th:value="${busVehicle.id}" th:checked="${busVehicle.depotParkedIn} == ${depotID}"/>
+            </tr>
+            </tbody>
+        </table>
+    </tr>
+
+    <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+</form>
+</body>
+</html>

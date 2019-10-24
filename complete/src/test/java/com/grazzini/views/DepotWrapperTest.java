@@ -51,6 +51,27 @@ public class DepotWrapperTest extends BaseTestClass{
     }
 
     @Test
+    public void validateAndCreateNewDepotWithExistingBusVehicles(){
+        String depotName = "DepotName";
+        int busCapacity = 5;
+        for(int i = 0; i < busCapacity; i++){
+            BusVehicle newBusVehicle = new BusVehicle("BUS-000-00" + i, BusVehicleType.REGULAR, BusVehicleColor.GREEN, 30);
+            busVehiculeWrapper.validateAndCreateNewBusVehicle(newBusVehicle);
+        }
+        Depot newDepot = new Depot(depotName, busCapacity);
+        newDepot.setBusVehiclesParked(busVehicleRepository.findAll());
+        depotWrapper.validateAndCreateNewDepot(newDepot);
+
+        List<Depot> retrievedDepots = depotRepository.findAll();
+
+        Assert.assertEquals(1, retrievedDepots.size());
+        Depot retrievedDepot = retrievedDepots.get(0);
+        Assert.assertEquals(5, retrievedDepot.getBusVehiclesParked().size());
+        List<BusVehicle> busVehicles = busVehicleRepository.findAll();
+        Assert.assertEquals(busVehicles.get(0).getDepotParkedIn().getName(), retrievedDepot.getName());
+    }
+
+    @Test
     public void validateAndCreateNewDepotWithSameName(){
         String depotName = "DepotName";
         Depot newDepot = new Depot(depotName, 5);
@@ -101,5 +122,50 @@ public class DepotWrapperTest extends BaseTestClass{
         List<Depot> retrievedDepots = depotRepository.findAll();
 
         Assert.assertEquals(0, retrievedDepots.size());
+    }
+
+    @Test
+    public void validateUpdateDepot(){
+        String depotNameStart = "DepotNameStart";
+        testHelper.createDepotWithBusVehicles(depotNameStart, 5);
+
+        Depot updatedDepot = depotRepository.findByName(depotNameStart);
+        String depotNameUpdated = "DepotNameUpdated";
+        updatedDepot.setName(depotNameUpdated);
+        depotWrapper.validateAndCreateNewDepot(updatedDepot);
+
+        List<Depot> depots = depotRepository.findAll();
+        Assert.assertEquals(1, depots.size());
+        Assert.assertEquals(depotNameUpdated, depots.get(0).getName());
+        Assert.assertEquals(5, depots.get(0).getBusVehiclesParked().size());
+
+    }
+
+    @Test
+    public void createMultipleDepot(){
+        String depotName = "DepotName";
+        Depot newDepot = new Depot(depotName, 15);
+        depotWrapper.validateAndCreateNewDepot(newDepot);
+
+        String depotName2 = "DepotName2";
+        Depot updatedDepot = new Depot(depotName2, 15);
+        depotWrapper.validateAndCreateNewDepot(updatedDepot);
+
+        List<Depot> depots = depotRepository.findAll();
+        Assert.assertEquals(2, depots.size());
+    }
+
+    @Test
+    public void testCreateNewDepotWithSameNameDoesNotReplace(){
+        String depotName = "Depot1";
+        testHelper.createDepotWithBusVehicles(depotName, 5);
+        long firstId = depotRepository.findAll().get(0).getId();
+
+        Depot depot = new Depot(depotName, 5);
+        depotWrapper.validateAndCreateNewDepot(depot);
+        List<Depot> depotsAfter = depotRepository.findAll();
+        Assert.assertEquals(1, depotsAfter.size());
+        long secondId = depotsAfter.get(0).getId();
+        Assert.assertEquals(firstId, secondId);
     }
 }
